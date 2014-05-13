@@ -1,4 +1,101 @@
-h1 {
+/* http://colorschemedesigner.com/#3N52uw0w0fzJa */
+
+body {
+  margin: 0;
+}
+.wrap {
   font-family: "proxima-nova";
+  width: 100%;
+  background: ##EBEFFA;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+}
+
+.intro-wrap {
+  position: relative;
+}
+
+.intro-subtitle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+h1 {
   font-weight: 900;
+  margin: 0;
+  line-height: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  text-align: center;
+  color: rgba(255,255,255,0.3);
+  text-shadow: 2px 2px 0 #0C2F8E;
+}
+
+h1 smaller {
+  display: block;
+  font-size: .5em;
+  line-height: 1em;
+  font-family: "coquette";
+  color: black;
+  text-shadow: none;
+}
+
+h1 strong {
+  display: block;
+  font-size: 1.2em;
+  line-height: 1em;
+  font-weight: 900;
+  color: rgba(255,255,255,0.5);
+  text-shadow: 2px 2px 0 #7EF458;
+}
+
+.intro-image-outside-container {
+  width: 50%;
+  margin-left: 25%;
+  position: relative;
+}
+
+.intro-image-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125.06108382%;
+}
+
+.intro-image {
+  display: block;
+}
+
+.intro-image path {
+  fill: #EDD0F3;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .wrap {
+
+  }
+  h1 {
+    font-size: 4em;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .wrap {
+
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .wrap {
+
+  }
 }
