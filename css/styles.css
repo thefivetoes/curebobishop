@@ -21,10 +21,11 @@ body {
 }
 .wrap {
   font-family: "proxima-nova";
-  width: 100%;
+  width: 96%;
   background: ##EBEFFA;
   margin: 0;
   padding: 0;
+  margin-left: 2%;
   box-sizing: content-box;
   -moz-box-sizing: content-box;
   position: relative;
@@ -60,6 +61,7 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-delay: 2s;
   -webkit-animation-delay: 2s;
+  text-decoration: none;
 }
 
 .intro-subtitle:hover {
@@ -101,7 +103,15 @@ h1 strong {
 .intro-image-outside-container {
   width: 50%;
   margin-left: 25%;
-  /*position: absolute;*/
+  margin-top: 40em;
+  -webkit-animation: bugIntro 3s 1;
+  -moz-animation:    bugIntro 3s 1;
+  -o-animation:      bugIntro 3s 1;
+  animation:         bugIntro 3s 1;
+  fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 250ms;
+  -webkit-animation-delay: 250ms;
 }
 
 .intro-image-container {
@@ -128,50 +138,37 @@ h1 strong {
   margin: 0 auto;
 }
 
+.cta-content h2 {
+  font-family: "coquette";
+  text-align: center;
+  text-shadow: 1px 1px white;
+}
+
+.quote-source {
+  font-size: .5em;
+  line-height: 1.2em;
+  color: rgba(0,0,0,0.5);
+}
+
+.quote-source a {
+  color: rgba(0,0,0,0.5);
+}
+
+.main-content {
+  margin-bottom: 2em;
+}
+.main-content p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .main-content p em {
   font-family: "coquette";
   font-weight: 100;
 }
-
-.bg-container {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  display: none;
-}
-
-.bg-normal{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/bg.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
-
-}
-.bg-blur{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/bg-blur.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  -webkit-animation: bgIntro 2s 1;
-  -moz-animation:    bgIntro 2s 1;
-  -o-animation:      bgIntro 2s 1;
-  animation:         bgIntro 2s 1;
-  fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s;
+.main-content p strong {
+  font-family: "coquette";
+  font-weight: 400;
 }
 
 .chat-head {
@@ -188,6 +185,14 @@ h1 strong {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
   cursor: pointer;
+}
+
+.chat-head:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .chat-head-pic {
@@ -272,6 +277,10 @@ footer {
   h1 {
     font-size: 4em;
   }
+
+  .cta-content h2 {
+      font-size: 2em;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -287,9 +296,16 @@ footer {
     font-size: 1.3em;
   }
   .cta-item {
-    width: 40%;
+    width: 46%;
     display: inline-block;
-    margin-left: 4%
+    margin-left: 0;
+    font-size: .9em;
+  }
+  .twitter-cta {
+    margin-left: 0;
+  }
+  .facebook-cta {
+    margin-left: 4% !important;
   }
 }
 
@@ -385,4 +401,21 @@ footer {
     transform: perspective(400px) rotateX(0deg);
     opacity: 1;
   }
+}
+
+@-webkit-keyframes bugIntro {
+  0%   { margin-top: 40em; }
+  100% { margin-top: 3em; }
+}
+@-moz-keyframes bugIntro {
+  0%   { margin-top: 40em; }
+  100% { margin-top: 3em; }
+}
+@-o-keyframes bugIntro {
+  0%   { margin-top: 40em; }
+  100% { margin-top: 3em; }
+}
+@keyframes bugIntro {
+  0%   { margin-top: 40em; }
+  100% { margin-top: 3em; }
 }
