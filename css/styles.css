@@ -40,7 +40,7 @@ body {
   top: 100%;
   left: 60%;
   background: #0C2F8E;
-  padding: 10px;
+  padding: 4px;
   font-family: "coquette";
   color: white;
   cursor: pointer;
@@ -336,19 +336,19 @@ footer {
 
 @-webkit-keyframes headIntroSmall {
   0%   { left: -80px; top: 30px; }
-  100% { left: 10px; top: 10px; }
+  100% { left: 4px; top: 4px; }
 }
 @-moz-keyframes headIntroSmall {
   0%   { left: -80px; top: 30px; }
-  bgIntro100% { left: 10px; top: 10px; }
+  100% { left: 4px; top: 4px; }
 }
 @-o-keyframes headIntroSmall {
   0%   { left: -80px; top: 30px; }
-  bgIntro100% { left: 10px; top: 10px; }
+  100% { left: 4px; top: 4px; }
 }
 @keyframes headIntroSmall {
   0%   { left: -80px; top: 30px; }
-  bgIntro100% { left: 10px; top: 10px; }
+  100% { left: 4px; top: 4px; }
 }
 
 @-webkit-keyframes flipInX {
