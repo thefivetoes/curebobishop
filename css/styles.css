@@ -40,7 +40,8 @@ body {
   top: 100%;
   left: 60%;
   background: #0C2F8E;
-  padding: 4px;
+  padding: 10px;
+  text-align: center;
   font-family: "coquette";
   color: white;
   cursor: pointer;
